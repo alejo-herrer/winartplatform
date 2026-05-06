@@ -1,0 +1,109 @@
+.wt-start{
+    height: 300vh;
+}
+
+.wt-sticky{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.wt-home{
+    
+    height: 100vh;
+    background-image: url('../assets/fondoHome.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wt-home-hojas{
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.wt-home-hoja1{
+    width: 400px;
+    position: absolute;
+    top: calc(-60px - 420px);
+    right: -150px;
+}
+
+.wt-home-hoja2{
+    width: 600px;
+    position: absolute;
+    top: calc(-120px - 600px);
+    right: -250px;
+    transform: rotate(-10deg);
+}
+
+.wt-home-hoja1_2{
+    width: 400px;
+    position: absolute;
+    top: calc(-60px - 420px);
+    left: -150px;
+}
+
+.wt-home-hoja2_2{
+    width: 600px;
+    position: absolute;
+    top: calc(-120px - 600px);
+    left: -250px;
+    transform: rotate(10deg);
+}
+
+.wt-home-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+
+.wt-home-logo{
+    z-index: 10;
+    position:relative;
+    width: 500px;
+    filter: drop-shadow(3px 0px 3px #0000009c);
+    top:750px;
+}
+
+.wt-home-center p{
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3 em;
+    color: #ffffff;
+    letter-spacing: 0.6em;
+    filter: drop-shadow(3px 1px 3px #000000);
+}
+
+.wt-home-bg{
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.wt-home-brillo{
+    width: 1950px;
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    opacity: 90%;
+}
+
+.wt-home-sol{
+    width: 500px;
+    position: absolute;
+    right: 710px;
+    top: 140px;
+}

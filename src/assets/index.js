@@ -1,0 +1,7 @@
+export { default as hoja1 } from './hoja1.png';
+export { default as hoja1_2 } from './hoja1_2.png';
+export { default as hoja2 } from './hoja2.png';
+export { default as hoja2_2 } from './hoja2_2.png';
+export { default as winartlogo } from './winartlogo.png';
+export { default as brillo } from './brillo.png';
+export { default as sol } from './sol.png';

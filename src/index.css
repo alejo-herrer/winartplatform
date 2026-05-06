@@ -1,0 +1,8 @@
+:root {
+    cursor: url('./assets/cursor.png'), default;
+
+}
+
+a, button{
+    cursor: url('./assets/pointer.png'), pointer;
+}
