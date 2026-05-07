@@ -1,6 +1,8 @@
 import { supabase } from './supabaseClient.js'
 import { useState, useEffect } from 'react'
 import {  Home  } from './Home/Home.jsx'
+import {  About  } from './Pages/About/About.jsx'
+import { NavBar } from './components/NavBar/NavBar.jsx'
 import './App.css'
 
 export function App() {
@@ -29,7 +31,14 @@ export function App() {
   speaker.map((item)=>{console.log(item.textospeaker)})
 
   return(
-        <Home></Home>
+        <section>
+            <NavBar></NavBar>
+            <div className='wt-App'>
+              <Home></Home>
+              <About></About>
+            </div>
+        </section>
+        
   )
 
 }

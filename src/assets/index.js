@@ -5,3 +5,5 @@ export { default as hoja2_2 } from './hoja2_2.png';
 export { default as winartlogo } from './winartlogo.png';
 export { default as brillo } from './brillo.png';
 export { default as sol } from './sol.png';
+export { default as winartlogo2 } from './winartlogo2.png';
+export { default as videopresentacion } from './videopresentacion.mp4';

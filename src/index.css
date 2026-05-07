@@ -1,8 +1,12 @@
-:root {
-    cursor: url('./assets/cursor.png'), default;
-
+body, :root{
+  cursor: url('./assets/cursor.png'), default;  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(3, 3, 3);
 }
 
-a, button{
+a, button, video{
     cursor: url('./assets/pointer.png'), pointer;
 }
+
