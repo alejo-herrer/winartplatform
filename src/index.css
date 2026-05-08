@@ -1,12 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body, :root{
   cursor: url('./assets/cursor.png'), default;  
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: rgb(3, 3, 3);
+  background-color: #000000;
+  font-family: Poppins;
 }
 
 a, button, video{
     cursor: url('./assets/pointer.png'), pointer;
+    text-decoration: none;
 }
 
+svg{
+    width: 1em;
+}

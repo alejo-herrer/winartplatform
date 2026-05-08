@@ -1,0 +1,33 @@
+.wt-Button{
+    padding: 0.8em 2em;
+    display: flex;
+    gap: 0.6em;
+    border-radius: 5px;
+    font-family: Poppins;
+    width: auto;
+    font-size: 1em;
+    border: none;
+    filter: drop-shadow(3px 0px 3px #0000009c);
+    background: var(--bg-color-btn);
+    color: var(--text-color-btn);
+    transition: 0.2s ease;
+}
+
+.wt-Button:hover{
+    transform: scale(1.1);
+    background: var(--hover-color-btn);
+    color: var(--text-hover-color-btn);
+    transition: 0.2s ease;
+}
+
+.wt-Button:active{
+    transform: scale(1);
+    transition: 0.3s ease;
+
+}
+
+.wt-WLine{
+    width: 100%;
+    height: 10px;
+    background-color: #f8a13e;
+}

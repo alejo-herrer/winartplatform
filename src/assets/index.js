@@ -7,3 +7,4 @@ export { default as brillo } from './brillo.png';
 export { default as sol } from './sol.png';
 export { default as winartlogo2 } from './winartlogo2.png';
 export { default as videopresentacion } from './videopresentacion.mp4';
+export { default as limaplayas} from './limaplayas.jpg';

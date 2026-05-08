@@ -20,7 +20,6 @@
 .wt-NavBar li{
     flex-grow: 1;
     padding: 10px;
-    color: #ffffff;
     font-family: Poppins;
     font-size: 0.8em;
     text-align: center;
@@ -28,9 +27,17 @@
 }
 
 .wt-NavBar li:hover{
-    color: #f8a13e;
     transform: translateY(-5px);
     transition: 0.3s ease-in-out; 
+}
+
+.wt-NavBar a {
+    color: #ffffff;
+}
+
+.wt-NavBar a:hover, a:active{
+    color: #f8a13e;
+
     
 }
 
@@ -38,3 +45,4 @@
     width: 200PX;
     padding: 20PX 40PX;
 }
+

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import {  Home  } from './Home/Home.jsx'
 import {  About  } from './Pages/About/About.jsx'
 import { NavBar } from './components/NavBar/NavBar.jsx'
+import { WLine } from './components/WLine';
 import './App.css'
 
 export function App() {
@@ -35,6 +36,7 @@ export function App() {
             <NavBar></NavBar>
             <div className='wt-App'>
               <Home></Home>
+              <WLine></WLine>
               <About></About>
             </div>
         </section>
