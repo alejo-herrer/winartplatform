@@ -1,0 +1,49 @@
+.wt-Program{
+    position: relative;
+    height: 420vh;
+}
+
+.wt-Program-bg{
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../../assets/sunsetyate.jpg');
+    background-size: cover;
+    background-position: center;
+
+    z-index: 1;
+}
+
+.wt-Program-bg::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(151, 71, 5, 0.651);
+}
+
+.wt-Program-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10vh 0;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.wt-Program-container h2{
+    z-index: 10;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
