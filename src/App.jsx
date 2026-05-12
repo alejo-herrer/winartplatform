@@ -6,6 +6,7 @@ import { NavBar } from './components/NavBar/NavBar.jsx'
 import { WLine } from './components/WLine';
 import { Beneficios } from './Pages/Beneficios/Beneficios.jsx'
 import { Program } from './Pages/Program/Program.jsx'
+import { Spots } from './Pages/Spots/Spots.jsx'
 import './App.css'
 
 export function App() {
@@ -43,6 +44,7 @@ export function App() {
               <WLine></WLine>
               <Beneficios></Beneficios>
               <Program></Program>
+              <Spots></Spots>
             </div>
         </section>
         
