@@ -98,9 +98,8 @@
 }
 
 .wt-home-brillo{
-    height: auto;
+    height: 100vh;
     position: absolute;
-    top: -12vh;
 }
 
 .wt-home-sol{
