@@ -54,55 +54,55 @@
 
 .wt-Timeline{
     width: 80vw;
-    height: 600px;
+    height: 50vh;
     display: flex;
     justify-content: space-between;
 }
 
 .wt-Timeline0-line{
     width: 3px;
-    height: 300px;
+    height: 25vh;
     background-color: #ffffff;
     position: relative;
     transform: translateY(300px);
 }
 
 .wt-Timeline0-circle{
-    padding: 20px;
+    padding: 1vw;
     border-radius: 20px;
     background-color: #ffffff;
     position: relative;
-    transform: translate(-17px, -17px);
+    transform: translate(-0.9vw, -0.9vw);
 }
 
 .wt-Timeline1-line{
     width: 3px;
-    height: 600px;
+    height: 50vh;
     background-color: #ffffff;
     position: relative;
 }
 
 .wt-Timeline1-circle{
-    padding: 20px;
+    padding: 1vw;
     border-radius: 20px;
     background-color: #ffffff;
     position: relative;
-    transform: translate(-17px, 285px);
+    transform: translate(-0.9vw, 24vh);
 }
 
 .wt-Timeline2-line{
     width: 3px;
-    height: 300px;
+    height: 25vh;
     background-color: #ffffff;
     position: relative;
 }
 
 .wt-Timeline2-circle{
-    padding: 20px;
+    padding: 1vw;
     border-radius: 20px;
     background-color: #ffffff;
     position: relative;
-    transform: translate(-17px, 285px);
+    transform: translate(-0.9vw, 24vh);
 }
 
 
