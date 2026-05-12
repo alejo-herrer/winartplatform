@@ -90,20 +90,22 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wt-home-brillo{
     width: 1950px;
     position: absolute;
     top: -80px;
-    right: 0px;
 }
 
 .wt-home-sol{
     width: 500px;
     position: absolute;
-    right: 710px;
     top: 260px;
+    place-self: center;
 }
 
 /* View 2 */
