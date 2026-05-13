@@ -10,7 +10,7 @@
 }
 
 .wt-Spots-container{
-    height: 40vh;
+    height: auto;
     width: 30vw;
     background: white;
     border-radius: 20px;
@@ -20,12 +20,15 @@
     align-items: center;
     justify-content: center;
     margin: 3vw;
+    text-align: center;
+    padding: 3vw 0;
+    margin: 4vw;
 }
 
 .wt-Spots-container span{
     font-weight: 900;
     font-size: 3em;
-    height: 1.3em;
+    height: 1.2em;
 }
 
 .wt-Spots-container span:first-child{
@@ -37,4 +40,33 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media (max-width:768px) {
+
+    .wt-Spots-container{
+        width: 80vw;
+    }
+
+    .wt-Spots-container span{
+        font-weight: 900;
+        font-size: 1.8em;
+        height: 1em;
+    }
+
+    .wt-Spots-container span:first-child{
+        font-size: 2em;
+        height: 1.6em;
+    }
+
+    .wt-Spots-container p{
+        font-size: 0.8em ;
+    }
+
+    .wt-Spots-container{
+        padding: 8vw 0;
+        margin: 8vw;
+    }
+
+
 }

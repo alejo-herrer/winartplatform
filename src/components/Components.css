@@ -157,4 +157,10 @@
     .wt-Timeline0-line, .wt-Timeline1-line, .wt-Timeline2-line{
         display: none;
     }
+
+    .wt-Item{
+        height: auto;
+        border-radius: 25px;
+        padding: 10px;
+    }
 }
