@@ -61,10 +61,10 @@
 
 .wt-Timeline0-line{
     width: 3px;
-    height: 25vh;
+    height: 50vh;
     background-color: #ffffff;
     position: relative;
-    transform: translateY(300px);
+    transform: translateY(25vh);
 }
 
 .wt-Timeline0-circle{
