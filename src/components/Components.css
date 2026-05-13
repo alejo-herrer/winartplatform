@@ -135,7 +135,26 @@
 }
 
 
+@media (max-width:768px) {
 
+    .wt-Timeline{
+        flex-direction: column;
+        height: auto;
+        justify-content: left;
+        margin: 4vh;
+    }
 
+    .wt-Timeline-txt{
+        width: 85vw;
+        justify-content: left;
+        margin: 0 0 2vh 0;
+    }
 
+    .wt-Timeline-box{
+        width: 80vw;
+    }
 
+    .wt-Timeline0-line, .wt-Timeline1-line, .wt-Timeline2-line{
+        display: none;
+    }
+}

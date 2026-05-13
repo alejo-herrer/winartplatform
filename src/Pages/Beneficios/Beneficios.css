@@ -1,6 +1,6 @@
 .wt-Beneficios{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: #ffffff; 
     display:flex;
     align-items: center;
@@ -41,7 +41,7 @@
     border-radius: 20px 0px 20px 0px;
     box-sizing: border-box;
     height: 100%;
-    width: 20 vw;
+    width: 30vw;
 }
 
 .wt-Beneficios-img img{
@@ -52,3 +52,35 @@
 
 }
 
+@media (max-width:768px) {
+
+    .wt-Beneficios-container{
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .wt-Beneficios-lista{
+        width: 80vw;
+        font-size: 0.8em;
+    }
+    
+    .wt-Beneficios-lista h2{
+        text-align: center;
+        font-size:1.8em;
+    }
+
+    .wt-Beneficios{
+        padding:  2vh 0vw ; 
+    }
+
+    .wt-Beneficios-img{
+        height: 100%;
+        width: 70vw;
+        padding: 5px;
+        border-radius: 0px ;
+    }
+
+    .wt-Beneficios-img img{
+        border-radius: 0px ;
+    }
+}

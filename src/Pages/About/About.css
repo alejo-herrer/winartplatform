@@ -48,3 +48,29 @@
 }
 
 
+@media (max-width:768px) {
+
+    .wt-About-container{
+        flex-direction: column;
+    }
+
+    .wt-About-txt h2{
+        font-size:2em;
+    }
+
+    .wt-About-txt{
+        width: 70vw;
+    }
+
+    .wt-About-img{
+        border-radius: 0px;
+    }
+
+    .wt-About-img img{
+        padding: 5px;
+        border-radius: 0px;
+        width: 70vw;
+    }
+
+
+}
