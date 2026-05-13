@@ -9,6 +9,7 @@
 
 .wt-About-container{
     display: flex ;   
+    align-items: center;
     gap: 5vw;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .wt-About-txt h2{
-    font-size:4em;
+    font-size:3em;
     text-decoration: underline;
     color: #c05b08;
     margin: 10px 0px;
@@ -38,6 +39,7 @@
 .wt-About-img{
     background-color: #311d08d7;
     border-radius: 20px 0px 20px 0px;
+    height: 100%;
     
 }
 
