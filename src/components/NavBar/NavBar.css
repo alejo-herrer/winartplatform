@@ -46,3 +46,78 @@
     padding: 20PX 40PX;
 }
 
+
+@media (max-width:768px) {
+
+
+    .wt-NavBar-menu{
+        left: 0;
+        top:-100vh;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        z-index: 9000;
+        display: flex;
+        background-color: #311d08e3;
+        transition: all 1s ease-out ;
+    }
+
+    .wt-NavBar-menu.open{
+        left: 0;
+        top:0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        z-index: 9000;
+        display: flex;
+        background-color: #311d08e3;
+        transition: all 1s ease-out ;
+    }
+
+    ul{
+        position: absolute;
+        list-style: none;
+        top:100px;
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Poppins;
+        font-size: 0.8em;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        align-items: center;
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover, a:active{
+        color: #f8a13e;
+
+    }
+
+    .wt-NavBar-Burguer svg{
+        display: block;
+        color: #ffffff;
+        width: 30px;
+        padding: 0 30px;
+    }
+
+}

@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { useScrollProgress } from '../Hook/useScroll';
 import { WButton } from '../components/WButton'
 import { hoja1, hoja1_2, hoja2, hoja2_2, winartlogo, brillo, sol, videopresentacion} from '../assets'
