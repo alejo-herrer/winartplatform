@@ -45,7 +45,7 @@ export function Home() {
                 </div>
                 <div className='wt-start-enjoy'>
                     <div className='wt-start-video'>
-                        <video src={videopresentacion} autoPlay muted controls />
+                        <video src={videopresentacion} muted controls />
                     </div>
                 </div>
                 <WButton>
