@@ -4,7 +4,7 @@ export function WItem({children, numItem = 0}){
     
     const item = {
         0: {
-            bg: '#F3A673AD',
+            bg: '#fbdfbc',
             text: '#1B1B1B',
             svg: '#0E5A25',
         },
