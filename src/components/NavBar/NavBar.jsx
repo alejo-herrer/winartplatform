@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import { Link } from 'react-router-dom'
 import { winartlogo2 } from '../../assets' 
 import { useIsMobile } from '../../Hook/useIsMobile'
 import './NavBar.css'
@@ -16,12 +17,9 @@ export function NavBar(){
                 <img className='wt-NavBar-Logo' src={winartlogo2} />
                 <div className='wt-NavBar-menu'>
                     <ul>
-                        <li><a href='#Inicio'>INICIO</a></li>
-                        <li><a href='#About'>ACERCA DE</a></li>
-                        <li><a>NUESTROS SPEAKERS</a></li>
-                        <li><a>NUESTROS PLANES</a></li>
-                        <li><a>ENTRADAS</a></li>
-                        <li><a>FAQ</a></li>
+                        <li><Link to='/'>INICIO</Link></li>
+                        <li><Link to='/Speakers'>NUESTROS SPEAKERS</Link></li>
+                        <li><Link to='/Plan'>NUESTROS PLANES</Link></li>
                     </ul>
                 </div>
             </div>
@@ -40,12 +38,9 @@ export function NavBar(){
                 </div>
                  <div className={`wt-NavBar-menu ${on ? "open" : ""}`}>
                             <ul>
-                                <li><a href='#Inicio'>INICIO</a></li>
-                                <li><a href='#About'>ACERCA DE</a></li>
-                                <li><a>NUESTROS SPEAKERS</a></li>
-                                <li><a>NUESTROS PLANES</a></li>
-                                <li><a>ENTRADAS</a></li>
-                                <li><a>FAQ</a></li>
+                                <li><Link to='/'>INICIO</Link></li>
+                                <li><Link to='/Speakers'>NUESTROS SPEAKERS</Link></li>
+                                <li><Link to='/Plan'>NUESTROS PLANES</Link></li>
                             </ul>
                 </div>
             </div>

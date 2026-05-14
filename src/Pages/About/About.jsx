@@ -3,7 +3,7 @@ import "./About.css";
 
 export function About() {
   return (
-    <div className="wt-About" id="About">
+    <div className="wt-About"  >
       <div className='wt-About-container'>
         <div className='wt-About-txt'>
           <h2>¿QUE ES <span>WINART?</span></h2>

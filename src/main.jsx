@@ -1,8 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { App } from './App.jsx'
+import { Plan } from './Pages/Plan/Plan.jsx'
+import { Speakers } from './Pages/Speakers/Speakers.jsx'
+
+
 
 createRoot(document.getElementById('root')).render(
-    <App />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/Speakers" element={<Speakers/>} />
+        <Route path="/Plan" element={<Plan />} />
+      </Routes>
+    </BrowserRouter>
 )
