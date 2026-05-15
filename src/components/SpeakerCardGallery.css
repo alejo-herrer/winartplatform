@@ -1,0 +1,13 @@
+
+.wt-SpeakerCard-Container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    
+}
+

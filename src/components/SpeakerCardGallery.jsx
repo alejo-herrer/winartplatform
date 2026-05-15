@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef  } from "react";
 import { SpeakerCard } from './SpeakerCard.jsx'
 import { supabase } from "../supabaseClient.js";
-import './Components.css'
+import './SpeakerCardGallery.css'
 
 
 export function SpeakerCardGallery(){
@@ -27,7 +27,7 @@ export function SpeakerCardGallery(){
     return(
         <div className='wt-SpeakerCard-Container'>
             {speaker.map((item) =>
-                <SpeakerCard    id={item.id}
+                <SpeakerCard    key={item.id}
                                 fondoSpeaker={item.fondospeaker} 
                                 urlSpeaker= {item.urlspeaker}
                                 textoSpeaker={item.textospeaker}
