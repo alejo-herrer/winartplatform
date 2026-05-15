@@ -1,7 +1,7 @@
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
 import { useState, useEffect } from 'react'
-import { SpeakerCardGallery } from '../../components/SpeakerCardGallery.jsx'
 import './Speakers.css'
+import { SpeakerCarrousel } from '../../components/Carrousel/SpeakerCarrousel.jsx'
 
 
 export function Speakers() {
@@ -13,7 +13,7 @@ export function Speakers() {
       <div className='wt-Speakers'>
         <div className='wt-Speakers-container'>
           <div className='wt-Speakers-start'> 
-            <SpeakerCardGallery></SpeakerCardGallery>
+            <SpeakerCarrousel></SpeakerCarrousel>
           </div>
         </div>
       </div>
