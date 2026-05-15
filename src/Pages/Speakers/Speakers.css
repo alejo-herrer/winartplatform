@@ -40,3 +40,12 @@
     height: 1em;
     font-size: 3em;
 }
+
+@media (max-width:768px) {
+
+    .wt-Speakers-start h2{
+        height: 0.7em;
+        font-size: 1em;
+    }
+
+}
