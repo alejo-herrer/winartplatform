@@ -13,6 +13,7 @@ export function Speakers() {
       <div className='wt-Speakers'>
         <div className='wt-Speakers-container'>
           <div className='wt-Speakers-start'> 
+            <h2>NUESTROS SPEAKERS</h2>
             <SpeakerCarrousel></SpeakerCarrousel>
           </div>
         </div>

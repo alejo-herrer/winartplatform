@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { supabase } from "../../supabaseClient.js";
 import { SpeakerCard } from "./SpeakerCard.jsx";
+import { useIsMobile } from '../../Hook/useIsMobile'
 import './Carrousel.css'
 
 export function SpeakerCarrousel(){
     
     const[speaker, setSpeaker] =useState([])
     const [currentIndex, setCurrentIndex] = useState(0)
+    const isMobile = useIsMobile()
+    
 
     useEffect(() =>{
         async function fetchData(){
@@ -65,13 +68,19 @@ export function SpeakerCarrousel(){
         return <div>Cargando...</div>;
     }
 
-    const visibleSpeakers = [
-        speaker[currentIndex],
-        speaker[(currentIndex + 1) % speaker.length],
-        speaker[(currentIndex + 2) % speaker.length],
-    ];
-
+    let visibleSpeakers = []
     
+    if(!isMobile){
+
+        visibleSpeakers = [
+            speaker[currentIndex],
+            speaker[(currentIndex + 1) % speaker.length],
+            speaker[(currentIndex + 2) % speaker.length],
+        ];
+    } else {
+        visibleSpeakers = [
+            speaker[currentIndex]];
+    }
 
     return (
         <section className="wt-Carousel">
