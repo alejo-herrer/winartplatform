@@ -5,7 +5,7 @@ import './index.css'
 import { App } from './App.jsx'
 import { Plan } from './Pages/Plan/Plan.jsx'
 import { Speakers } from './Pages/Speakers/Speakers.jsx'
-import { W2026 } from './Pages/W2026/W2026.jsx'
+import { W2026 } from './Pages/2026/W2026.jsx'
 
 
 
