@@ -47,21 +47,25 @@ export function SpeakerCarrousel(){
 
     }, [speaker])
 
-     const handleNext = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex + 1 === speaker.length ? 0 : prevIndex + 1
-        );
-    };
+    if(!isMobile){
+        const handleNext = () => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex + 1 === speaker.length ? 0 : prevIndex + 1
+            );
+        };
 
-    const handlePrevious = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex - 1 < 0 ? speaker.length - 1 : prevIndex - 1
-        );
-    };
+        const handlePrevious = () => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex - 1 < 0 ? speaker.length - 1 : prevIndex - 1
+            );
+        };
 
-    const handleDotClick = (index) => {
-        setCurrentIndex(index);
-    };
+        const handleDotClick = (index) => {
+            setCurrentIndex(index);
+        }; 
+    } else {
+
+    }
 
     // Evita errores mientras carga Supabase
     if (speaker.length === 0) {
@@ -95,12 +99,22 @@ export function SpeakerCarrousel(){
                 </div>
 
                 {visibleSpeakers.map((item, index) => (
-                    <SpeakerCard
-                        key={index}
-                        fondoSpeaker={item.fondospeaker}
-                        urlSpeaker={item.urlspeaker}
-                        textoSpeaker={item.textospeaker}
-                    />
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={currentIndex}
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                        <SpeakerCard
+                            key={index}
+                            fondoSpeaker={item.fondospeaker}
+                            urlSpeaker={item.urlspeaker}
+                            textoSpeaker={item.textospeaker}
+                        />
+                        </motion.div>
+                    </AnimatePresence>
                 ))}
 
                 <div className="slide_direction">
@@ -114,7 +128,7 @@ export function SpeakerCarrousel(){
             </div>
 
             <div className="indicator">
-            
+                
                 {speaker.map((_, index) => (
                     <div
                         key={index}
