@@ -47,25 +47,23 @@ export function SpeakerCarrousel(){
 
     }, [speaker])
 
-    if(!isMobile){
-        const handleNext = () => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex + 1 === speaker.length ? 0 : prevIndex + 1
-            );
-        };
+    const step = 1
 
-        const handlePrevious = () => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex - 1 < 0 ? speaker.length - 1 : prevIndex - 1
-            );
-        };
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex + step === speaker.length ? step : prevIndex + step
+        );
+    };
 
-        const handleDotClick = (index) => {
-            setCurrentIndex(index);
-        }; 
-    } else {
+    const handlePrevious = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex - step < 0 ? speaker.length - step : prevIndex - step
+        );
+    };
 
-    }
+    const handleDotClick = (index) => {
+        setCurrentIndex(index);
+    };
 
     // Evita errores mientras carga Supabase
     if (speaker.length === 0) {
