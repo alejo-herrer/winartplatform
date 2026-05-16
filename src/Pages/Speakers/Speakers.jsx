@@ -1,5 +1,4 @@
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
-import { useState, useEffect } from 'react'
 import './Speakers.css'
 import { SpeakerCarrousel } from '../../components/Carrousel/SpeakerCarrousel.jsx'
 

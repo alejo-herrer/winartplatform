@@ -8,10 +8,14 @@ export function Plan() {
 
       <section>
         <NavBar></NavBar>
-        <div>
-            <span>PROXIMAMENTE...</span>
+        <div className='wt-Plan'>
+          <div className='wt-Plan-container'>
+            <div className='wt-Plan-start'> 
+              <h2>PLANES</h2>
+            </div>
+          </div>
         </div>
-      </section>
+    </section>
         
     )
 }

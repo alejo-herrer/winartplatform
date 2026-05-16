@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
 .wt-Carousel{
   display: flex;
   flex-direction: column;
@@ -21,7 +23,6 @@
   gap: 1em;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 .App-header {
   font-size: 1rem;
   text-align: center;

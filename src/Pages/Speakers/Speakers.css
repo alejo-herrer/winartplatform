@@ -18,9 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/fondoHome.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(0deg,rgba(36, 24, 22, 1) 0%, rgba(87, 49, 9, 1) 87%);
 }
 
 .wt-Speakers-start{

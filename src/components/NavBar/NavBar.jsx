@@ -19,7 +19,7 @@ export function NavBar(){
                     <ul>
                         <li><Link to='/'>INICIO</Link></li>
                         <li><Link to='/Speakers'>NUESTROS SPEAKERS</Link></li>
-                        <li><Link to='/Plan'>NUESTROS SPEAKERS</Link></li>
+                        <li><Link to='/Plan'>NUESTROS PLANES</Link></li>
                         <li><Link to='/W2026'>NUESTRA EDICIÓN 2026</Link></li>
                     </ul>
                 </div>

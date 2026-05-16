@@ -8,6 +8,10 @@ import { Program } from './Pages/Program/Program.jsx'
 import { Spots } from './Pages/Spots/Spots.jsx'
 import './App.css'
 
+function Loader() {
+    return <div className="loader">Loading...</div>
+}
+
 export function App() {
 
   return(
