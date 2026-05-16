@@ -47,11 +47,12 @@ export function SpeakerCarrousel(){
 
     }, [speaker])
 
-    const step = 1
+    const step = !isMobile ? 3 : 1
+    const prevStep = !isMobile ? 0 : step
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex + step === speaker.length ? step : prevIndex + step
+            prevIndex + step >= speaker.length ? prevStep : prevIndex + step
         );
     };
 
@@ -126,16 +127,27 @@ export function SpeakerCarrousel(){
             </div>
 
             <div className="indicator">
-                
-                {speaker.map((_, index) => (
-                    <div
-                        key={index}
-                        className={`dot ${currentIndex === index ? "active" : ""}`}
-                        onClick={() => handleDotClick(index)}
-                    >
-                    </div>
-                ))}
-    
+                {!isMobile ? 
+                       speaker .map((_, index) => (
+                                index % 3 === 0 ?
+                                <div
+                                    key={ index}
+                                    className={`dot ${currentIndex === index ? "active" : ""}`}
+                                    onClick={() => handleDotClick(index)}
+                                >
+                                </div> : null
+
+                    ))
+                :
+                   speaker.map((_, index) => (
+                        <div
+                            key={index}
+                            className={`dot ${currentIndex === index ? "active" : ""}`}
+                            onClick={() => handleDotClick(index)}
+                        >
+                        </div>
+                    ))
+                }
             </div>
         </section>
     );

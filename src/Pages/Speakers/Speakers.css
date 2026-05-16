@@ -33,13 +33,13 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-
 }
 
 .wt-Speakers-start h2{
     color: #ffffff;
     height: 1em;
     font-size: 3em;
+    margin: 0 0 0.6em 0;
 }
 
 @media (max-width:768px) {

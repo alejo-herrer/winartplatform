@@ -1,7 +1,7 @@
 
 .wt-SpeakerCard{
-    width: 372px;
-    height: 638px;
+    width: 16vw;
+    height: 60vh;
     perspective: 1000px;
     border-radius: var(--card-border);
     filter: var(--drop-shadow);
@@ -80,8 +80,10 @@
 }
 
 .wt-SpeakerCard-Img{
-    
-  border-radius: var(--card-border);
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--card-border);
 }
 
 @media (max-width:768px) {
