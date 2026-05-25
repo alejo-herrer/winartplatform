@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
 import './Speakers.css'
 import { SpeakerCarrousel } from '../../components/Carrousel/SpeakerCarrousel.jsx'
-import { LoadingPage } from '../../Components/LoadingPage/LoadingPage.jsx';
+import { LoadingPage } from '../../components/LoadingPage/LoadingPage.jsx';
 
 
 export function Speakers() {

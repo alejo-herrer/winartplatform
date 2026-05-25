@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
-import { LoadingPage } from '../../Components/LoadingPage/LoadingPage.jsx';
+import { LoadingPage } from '../../components/LoadingPage/LoadingPage.jsx';
 import './Plan.css'
 
 

@@ -6,7 +6,7 @@ import { WLine } from './components/WLine';
 import { Beneficios } from './Pages/Beneficios/Beneficios.jsx'
 import { Program } from './Pages/Program/Program.jsx'
 import { Spots } from './Pages/Spots/Spots.jsx'
-import { LoadingPage } from './Components/LoadingPage/LoadingPage.jsx';
+import { LoadingPage } from './components/LoadingPage/LoadingPage.jsx';
 import './App.css'
 
 
