@@ -6,13 +6,27 @@ import { WLine } from './components/WLine';
 import { Beneficios } from './Pages/Beneficios/Beneficios.jsx'
 import { Program } from './Pages/Program/Program.jsx'
 import { Spots } from './Pages/Spots/Spots.jsx'
+import { LoadingPage } from './Components/LoadingPage/LoadingPage.jsx';
 import './App.css'
 
-function Loader() {
-    return <div className="loader">Loading...</div>
-}
 
 export function App() {
+
+   const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // 2 segundos de carga
+
+        return () => clearTimeout(timer);
+
+    }, []);
+
+    if (loading) {
+        return <LoadingPage />;
+    }
 
   return(
         <section>

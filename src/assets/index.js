@@ -15,3 +15,4 @@ export { default as program2} from './program2.jpg';
 export { default as program3} from './program3.jpg';
 export { default as program4} from './program4.jpg';
 export { default as program5} from './program5.jpg';
+export { default as winartlogo3 } from './winartlogo3.png';

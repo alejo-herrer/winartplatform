@@ -4,6 +4,7 @@ import { supabase } from "../../supabaseClient.js";
 import { SpeakerCard } from "./SpeakerCard.jsx";
 import { useIsMobile } from '../../Hook/useIsMobile'
 import './Carrousel.css'
+import { LoadingPage } from "../Loading.jsx";
 
 export function SpeakerCarrousel(){
     
@@ -68,7 +69,7 @@ export function SpeakerCarrousel(){
 
     // Evita errores mientras carga Supabase
     if (speaker.length === 0) {
-        return <div>Cargando...</div>;
+        return <LoadingPage></LoadingPage>;
     }
 
     let visibleSpeakers = []

@@ -134,6 +134,33 @@
     border-radius: 10px;
 }
 
+.loading-container{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:6px solid #ddd;
+    border-top:6px solid black;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
 
 
 

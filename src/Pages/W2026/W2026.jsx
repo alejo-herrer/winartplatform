@@ -1,7 +1,26 @@
+import { useState, useEffect } from 'react'
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
+import { LoadingPage } from '../../Components/LoadingPage/LoadingPage.jsx';
 import './W2026.css'
 
 export function W2026() {
+
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // 2 segundos de carga
+
+        return () => clearTimeout(timer);
+
+    }, []);
+
+    if (loading) {
+        return <LoadingPage />;
+    }
+
 
   return(
     <section>

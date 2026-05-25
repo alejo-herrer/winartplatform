@@ -1,9 +1,27 @@
+import { useState, useEffect } from 'react'
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
 import './Speakers.css'
 import { SpeakerCarrousel } from '../../components/Carrousel/SpeakerCarrousel.jsx'
+import { LoadingPage } from '../../Components/LoadingPage/LoadingPage.jsx';
 
 
 export function Speakers() {
+
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // 2 segundos de carga
+
+        return () => clearTimeout(timer);
+
+    }, []);
+
+    if (loading) {
+        return <LoadingPage />;
+    }
 
   return(
 
