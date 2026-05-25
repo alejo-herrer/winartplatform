@@ -29,7 +29,7 @@ export function LoadingPage() {
                     duration: 1.5
                 }}
             >
-                Preparando los dermografos...
+                Preparando el dermografo...
             </motion.p>
 
         </div>
