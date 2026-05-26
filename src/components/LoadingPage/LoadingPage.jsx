@@ -3,6 +3,7 @@ import { winartlogo3 } from "../../assets";
 import "./LoadingPage.css";
 
 export function LoadingPage() {
+
     return (
         <div className="loading-page">
 
