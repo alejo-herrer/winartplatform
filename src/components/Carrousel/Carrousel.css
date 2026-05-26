@@ -79,8 +79,10 @@
 
   .carousel{
     width: 100vw;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: space-around;
+    gap: 0.5em;
   }
+
+
 
 }
