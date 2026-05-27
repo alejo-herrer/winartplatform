@@ -69,10 +69,10 @@ export function VideoCarrousel() {
                         />
                         <div className="contentDesc">
                             <div className="contentDescHeader">
-                                <strong>{videos[currentIndex]?.titulo_video}</strong>
+                                <h3>{videos[currentIndex]?.titulo_video}</h3>
                             </div>
                             <div className="contentDescBody">
-                                {videos[currentIndex]?.desc_video}
+                                <p>{videos[currentIndex]?.desc_video}</p>
                             </div>
                         </div>
                     </div>

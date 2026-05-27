@@ -42,4 +42,14 @@
         font-size: 2em;
     }
 
+    .wt-W2026-container{
+        height: calc(150vh + 100px);
+    }
+
+    .wt-W2026-start{
+        position: relative;
+        height: calc(150vh - 100px);
+    }
+
+
 }
