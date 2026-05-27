@@ -42,7 +42,7 @@ export function VideoCarrousel() {
 
     return (
         <section className="wt-Carousel2026">
-            <div className="carousel">
+            <div className="carrousel">
 
                 <div className="slide_direction">
 

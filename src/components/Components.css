@@ -161,7 +161,7 @@
     position: relative;
 }
 
-.carousel{
+.carrousel{
   position: relative;
   display: flex;
   gap: 2em;
@@ -276,7 +276,7 @@
         height: 60vh;
     }
 
-    .carousel{
+    .carrousel{
         width: 100vw;
         height: 120vh;
         justify-content: space-between;
