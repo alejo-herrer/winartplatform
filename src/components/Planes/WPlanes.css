@@ -1,0 +1,80 @@
+.wt-Plan-gallery{
+    display: flex ;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.wt-Plan-box{
+    min-width: 400px;
+    min-height: 250px;
+    width: 50vw;
+    height: 30vw;
+    background-color: #00000085;
+    color: #fcfcfc;
+    border-radius: 10px;
+}
+
+.wt-Plan-chart{
+    display: flex;
+    height: 100%;
+}
+
+.wt-Plan-Desc{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0  10px 10px  0;
+}
+
+.wt-Plan-Desc h3{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.6em;
+    white-space: pre-line;
+    
+}
+
+.wt-Plan-Desc p{
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.6em;
+    white-space: pre-line;
+    
+}
+
+.wt-Plan-Image{
+    min-height: 250px;
+    height: 30vw;
+    border-radius: 10px  0  0  10px;
+}
+
+.wt-Plan-chart img{
+    height: 100%;
+    border-radius: 10px  0  0  10px;
+}
+
+@media (max-width:1450px) {
+
+    .wt-Plan-Desc h3{
+        font-size: 1.2em;     
+    }
+
+    .wt-Plan-Desc p{
+        font-size: 0.6em;
+    }
+
+}
+
+@media (max-width:1024px) {
+
+    .wt-Plan-Desc h3{
+        font-size: 0.8em;
+    }
+
+    .wt-Plan-Desc p{
+        font-size: 0.4em;
+    }
+
+}

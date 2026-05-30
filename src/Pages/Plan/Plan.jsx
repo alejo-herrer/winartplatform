@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { NavBar } from '../../components/NavBar/NavBar.jsx'
 import { LoadingPage } from '../../components/LoadingPage/LoadingPage.jsx';
 import './Plan.css'
+import { WPlanes } from '../../components/Planes/WPlanes.jsx';
 
 
 export function Plan() {
@@ -29,7 +30,8 @@ export function Plan() {
         <div className='wt-Plan'>
           <div className='wt-Plan-container'>
             <div className='wt-Plan-start'> 
-              <h2>PLANES</h2>
+              <h2>NUESTROS PLANES</h2>
+              <WPlanes></WPlanes>
             </div>
           </div>
         </div>
