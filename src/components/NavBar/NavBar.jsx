@@ -14,7 +14,9 @@ export function NavBar(){
         return(
 
             <div className='wt-NavBar'>
+                <Link to='/'>
                 <img className='wt-NavBar-Logo' src={winartlogo2} />
+                </Link>
                 <div className='wt-NavBar-menu'>
                     <ul>
                         <li><Link to='/'>INICIO</Link></li>
