@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../supabaseClient.js";
+import { Link } from 'react-router-dom'
 import "./WPlanes.css"
+import { WButton } from "../WButton.jsx";
 
 
 export function WPlanes(){
@@ -12,6 +14,7 @@ export function WPlanes(){
             const {data, error} = await supabase
                 .from('planes')
                 .select('*')
+                .order('id', { ascending: true })
             if (error){
                 console.log(error)
             } else {
@@ -20,6 +23,18 @@ export function WPlanes(){
         }
         fetchData()
     },[])
+
+    useEffect(() => {
+        if (window.paypal && plan.length > 0) {
+
+            plan.forEach(p => {
+                window.paypal.HostedButtons({
+                    hostedButtonId: p.botonplan,
+                }).render(`#paypal-container-${p.botonplan}`);
+            });
+
+        }
+    }, [plan]);
 
     return(
         <section className='wt-Plan-gallery'>
@@ -32,6 +47,9 @@ export function WPlanes(){
                     <div className='wt-Plan-Desc'>
                         <h3>{p.name}</h3>
                         <p>{p.desc}</p>
+                        <div className='wt-paypal-box'>
+                            <div className='wt-paypal-button' id={`paypal-container-${p.botonplan}`}></div>
+                        </div>
                     </div>
                 </div>
             </div>

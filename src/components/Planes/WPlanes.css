@@ -20,12 +20,14 @@
 }
 
 .wt-Plan-Desc{
-    padding: 2em;
     display: flex;
+    padding: 2em;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 0  10px 10px  0;
+    gap:1em
 }
 
 .wt-Plan-Desc h3{
@@ -54,6 +56,49 @@
     height: 100%;
     border-radius: 10px  0  0  10px;
 }
+
+.wt-paypal-button{
+    justify-content: center;
+    width:25vw;
+    font-size: 0.5em;
+    line-height: 1em;
+    
+}
+
+.wt-paypal-button h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.wt-paypal-button div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+
+.wt-paypal-button span{
+    display: none;
+}
+
+.wt-paypal-button form{
+    width: 80% !important;
+}
+
+.wt-paypal-button p{
+    display: none;
+}
+
+.wt-paypal-button img{
+    display: none;
+}
+
+
 
 @media (max-width:1450px) {
 
